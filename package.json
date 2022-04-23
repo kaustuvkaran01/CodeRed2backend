@@ -1,0 +1,27 @@
+{
+  "name": "codered2backend",
+  "version": "1.0.0",
+  "description": "This is backend code for CodeRED 2.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaustuvkaran01/CodeRed2backend.git"
+  },
+  "author": "Ayushi and Kaustuv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaustuvkaran01/CodeRed2backend/issues"
+  },
+  "homepage": "https://github.com/kaustuvkaran01/CodeRed2backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.3.1",
+    "nodemon": "^2.0.15"
+  }
+}
