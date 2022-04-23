@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const Amenity = require('../../model/Amenity');
 
-router.get(('/auth'),async (req,res)=>{
+router.get(('/amenity'),async (req,res)=>{
     res.send("Kyu aaye tum yahaan?")
 });
 
@@ -10,7 +10,6 @@ router.post(('/amenity'), async (req,res)=>{
     const amenityObject = {};
 
     Object.entries(req.body).forEach(([key, value]) => {
-        // console.log(`${key}: ${value}`);
         amenityObject[`${key}`] = `${value}`;
     });
 
@@ -24,8 +23,6 @@ router.post(('/amenity'), async (req,res)=>{
     }catch(err){
         res.status(200).send({errorData: err});
     }
-
-    // res.send(amenity);
 });
 
 module.exports = router;

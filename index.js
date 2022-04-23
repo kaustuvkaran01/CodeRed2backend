@@ -10,11 +10,17 @@ const amenityRoute = require('./routes/api/amenity');
 
 dotenv.config();
 
+const db = mongoose.connection;
+
 // Connect to DB
 mongoose.connect( process.env.DB_CONNECT, ()=>{
     console.log('Connected to db')
 });
 
+db.on("error", console.error.bind(console, "connection error: "));
+db.once("open", function () {
+  console.log("Connected successfully");
+});
 
 //Middlewares
 app.use(cors());

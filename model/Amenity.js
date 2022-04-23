@@ -83,4 +83,4 @@ const amenitySchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Amenity", amenitySchema);
+module.exports = mongoose.model('Amenity', amenitySchema);
