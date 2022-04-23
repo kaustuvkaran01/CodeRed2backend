@@ -1,11 +1,5 @@
-const router = require('express').Router();
+const router = require("express").Router();
 
-router.get(('/auth'),async (req,res)=>{
-    res.send("Kyu aaye tum yahaan?")
-});
-
-router.post(('/auth'),async (req,res)=>{
-    res.send("Kyu aaye tum yahaan?")
-});
+// const verifyController = require("../controllers/verifyController");
 
 module.exports = router;
