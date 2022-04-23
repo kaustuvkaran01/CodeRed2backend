@@ -57,6 +57,10 @@ const amenitySchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  hasWesternStyle: {
+    type: Boolean,
+    default: false,
+  }
   hasSanitaryNapkins: {
     type: Boolean,
     default: false,
