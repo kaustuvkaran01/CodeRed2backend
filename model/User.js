@@ -10,10 +10,7 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  //   amenityRated: {
-  //     type: [ObjectId],
-  //     ref: "Amenity",
-  //   },
+
   createdAt: {
     type: Date,
     default: Date.now(),
