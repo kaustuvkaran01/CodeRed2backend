@@ -6,6 +6,7 @@ var cors = require('cors')
 
 // import routes
 const authRoute = require('./routes/api/auth');
+const amenityRoute = require('./routes/api/amenity');
 
 dotenv.config();
 
@@ -16,11 +17,13 @@ mongoose.connect( process.env.DB_CONNECT, ()=>{
 
 
 //Middlewares
-// app.use(cors());
-// app.use(express.json());
+app.use(cors());
+app.use(express.json());
 
 //Route
 app.use('/routes/api', authRoute);
+app.use('/routes/api', amenityRoute);
+
 
 // route
 app.get('/ready', (req, res) => {
