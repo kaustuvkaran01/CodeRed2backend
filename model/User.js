@@ -10,7 +10,10 @@ const userSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-
+  password: {
+    type: String,
+    required: true,
+  },
   createdAt: {
     type: Date,
     default: Date.now(),
